@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&display=swap');
+
+form{
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: #93E5AB;
+    border-radius: 50px;
+}
+
+#reservaciones{
+    margin-left: 200px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1{
+    margin-left: 450px;
+    font-family: 'Phudu';
+    margin-top: 40px; 
+
+}
+input{
+    margin: 10px;
+    border-radius: 6px;
+}
+
+label{
+    display: inline-block;
+    width: 60px;
+    margin: 15px;
+}
+
+.fecha{
+    margin: 15px;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: -40px;
+}
+
+#reservaciones_Habitacion{
+    margin-left: 15px;
+}
+
+.btn{
+    margin-left: 350px;
+    margin-bottom: 15px;
+    background-color: beige;
+    border-color: #f3e889;
+    border-radius: 10px;
+}
+
+a{
+    margin-left: 350px;
+    background-color: beige;
+    border-color: #f3e889;
+    border-radius: 10px;
+    text-decoration: none;  
+}
