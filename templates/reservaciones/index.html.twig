@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Reservaciones index{% endblock %}
+
+{% block body %}
+    <h1>Reservaciones index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Usuario</th>
+                <th>Telefono</th>
+                <th>Email</th>
+                <th>Fecha</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for reservacione in reservaciones %}
+            <tr>
+                <td>{{ reservacione.id }}</td>
+                <td>{{ reservacione.usuario }}</td>
+                <td>{{ reservacione.telefono }}</td>
+                <td>{{ reservacione.email }}</td>
+                <td>{{ reservacione.fecha ? reservacione.fecha|date('Y-m-d') : '' }}</td>
+                <td>
+                    <a href="{{ path('app_reservaciones_show', {'id': reservacione.id}) }}">show</a>
+                    <a href="{{ path('app_reservaciones_edit', {'id': reservacione.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_reservaciones_new') }}">Create new</a>
+{% endblock %}
