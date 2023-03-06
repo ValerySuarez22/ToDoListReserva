@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&display=swap');
 
+body{
+background-color: hsl(0, 0%, 91%);
+}
+
 form{
     margin-left: 300px;
     margin-right: 300px;
     background-color: #93E5AB;
     border-radius: 50px;
+    margin-bottom: 40px;
 }
 
 #reservaciones{
@@ -26,7 +31,7 @@ input{
 label{
     display: inline-block;
     width: 60px;
-    margin: 15px;
+    margin: 18px;
 }
 
 .fecha{
@@ -44,14 +49,19 @@ label{
     margin-left: 350px;
     margin-bottom: 15px;
     background-color: beige;
-    border-color: #f3e889;
+    border-color: #93E5AB;
     border-radius: 10px;
 }
 
 a{
-    margin-left: 350px;
-    background-color: beige;
-    border-color: #f3e889;
+    font-family: ''Phudu'';
+    color: black;
+    margin-left: 640px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
     border-radius: 10px;
+    background-color: #93E5AB;
     text-decoration: none;  
 }
